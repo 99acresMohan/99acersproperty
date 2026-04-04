@@ -13,12 +13,11 @@ export async function GET() {
     const db = client.db("99acersproperty");
     const collection = db.collection("listings");
 
-    // Fetch and sort by newest first
     let properties = await collection.find({}).sort({ postedAt: -1 }).toArray();
 
-    // Safety Seed: If DB is empty, create one entry so the home page isn't blank
     if (properties.length === 0) {
-      const seedData = {
+      // We cast this as 'any' so TypeScript doesn't look for an _id property
+      const seedData: any = {
         title: "Sample Property - Sector 13 Rohini",
         price: "12500000",
         location: "Sector 13, Rohini",
@@ -27,8 +26,10 @@ export async function GET() {
         propertyId: "PRP-1001",
         description: "Freshly renovated flat near metro station."
       };
-      const insertResult = await collection.insertOne(seedData);
-      properties = [{ _id: insertResult.insertedId, ...seedData }] as any;
+      
+      // We don't even need to set the array manually, just insert and re-fetch
+      await collection.insertOne(seedData);
+      properties = await collection.find({}).toArray();
     }
 
     return NextResponse.json(properties);
@@ -37,7 +38,6 @@ export async function GET() {
     return NextResponse.json({ error: 'Fetch failed', details: e.message }, { status: 500 });
   }
 }
-
 // --- 2. POST NEW PROPERTY ---
 export async function POST(request: Request) {
   try {

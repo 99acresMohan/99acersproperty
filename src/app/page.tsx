@@ -5,7 +5,7 @@ import PropertyTile from '@/components/PropertyTile';
 
 export default function Home() {
   const [isAdmin, setIsAdmin] = useState(false);
-  const [properties, setProperties] = useState([]);
+  const [properties, setProperties] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const router = useRouter();
