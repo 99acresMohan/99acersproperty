@@ -28,7 +28,7 @@ export async function GET() {
         description: "Freshly renovated flat near metro station."
       };
       const insertResult = await collection.insertOne(seedData);
-      properties = [{ _id: insertResult.insertedId, ...seedData }];
+      properties = [{ _id: insertResult.insertedId, ...seedData }] as any;
     }
 
     return NextResponse.json(properties);
