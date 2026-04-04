@@ -27,8 +27,8 @@ export async function GET() {
         propertyId: "PRP-1001",
         description: "Freshly renovated flat near metro station."
       };
-      await collection.insertOne(seedData);
-      properties = [seedData];
+      const insertResult = await collection.insertOne(seedData);
+      properties = [{ _id: insertResult.insertedId, ...seedData }];
     }
 
     return NextResponse.json(properties);
