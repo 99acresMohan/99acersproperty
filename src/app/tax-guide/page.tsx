@@ -24,14 +24,14 @@ const TaxGuide = () => {
       <div style={styles.container}>
         
         <header style={styles.header}>
-          <h1 style={styles.mainTitle}>Real Estate Capital Gains Guide (2026)</h1>
+          <h1 style={styles.mainTitle}>Real Estate Capital Gains Guide</h1>
           <p style={styles.subtitle}>Professional Taxation & Reinvestment Resource</p>
         </header>
 
         {/* --- TAX CALCULATOR AT TOP --- */}
         <section style={styles.section}>
           <div style={styles.calculatorBox}>
-            <h2 style={{ fontSize: '1.25rem', marginBottom: '15px', color: '#fff', fontWeight: '700' }}>
+            <h2 style={{ fontSize: '1.25rem', marginBottom: '10px', color: '#fff', fontWeight: '700' }}>
               📊 Quick Tax Estimator (LTCG)
             </h2>
             <div style={styles.calcRow}>
@@ -124,7 +124,7 @@ const TaxGuide = () => {
         </section>
 
         <footer style={styles.footer}>
-          <p>© 2026 JMD Properties - Professional Property Dealing in Rohini.</p>
+          <p>© 2026 99acers Property - Professional Property Portal.</p>
         </footer>
       </div>
     </div>
@@ -132,9 +132,9 @@ const TaxGuide = () => {
 };
 
 const styles: { [key: string]: React.CSSProperties } = {
-  page: { background: '#f0f2f5', minHeight: '100vh', padding: '30px 15px', fontFamily: 'Segoe UI, sans-serif' },
+  page: { background: '#f0f2f5', minHeight: '100vh', padding: '3px 15px', fontFamily: 'Segoe UI, sans-serif' },
   container: { maxWidth: '850px', margin: '0 auto', background: '#fff', padding: '30px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)' },
-  header: { textAlign: 'center', marginBottom: '25px' },
+  header: { textAlign: 'center', marginBottom: '5px' },
   mainTitle: { fontSize: '1.8rem', color: '#1a1a1a', fontWeight: '800' },
   subtitle: { color: '#666', marginTop: '5px' },
   section: { marginBottom: '30px' },

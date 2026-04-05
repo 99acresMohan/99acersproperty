@@ -33,10 +33,9 @@ const EMICalculator = () => {
   return (
     <div style={styles.page}>
       <div style={styles.container}>
-        <button onClick={() => router.push('/')} style={styles.backBtn}>← Back to Home</button>
         
         <h2 style={styles.title}>Home Loan EMI Calculator</h2>
-        <p style={styles.subtitle}>Plan your property purchase in Delhi with ease</p>
+        <p style={styles.subtitle}>Plan your property purchase in India with ease</p>
 
         <div style={styles.flexBox}>
           {/* INPUT SECTION */}
@@ -133,7 +132,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
     backdropFilter: 'blur(10px)'
   },
-  backBtn: { background: 'none', border: 'none', color: '#0078db', cursor: 'pointer', fontWeight: 'bold', marginBottom: '20px' },
+  //backBtn: { background: 'none', border: 'none', color: '#0078db', cursor: 'pointer', fontWeight: 'bold', marginBottom: '20px' },
   title: { color: '#1a1a1a', margin: '0', fontSize: '2rem', textAlign: 'center' },
   subtitle: { textAlign: 'center', color: '#666', marginBottom: '40px' },
   flexBox: { display: 'flex', gap: '40px', flexWrap: 'wrap' },

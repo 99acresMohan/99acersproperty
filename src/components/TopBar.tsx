@@ -14,7 +14,8 @@ const TopBar = () => {
   const router = useRouter();
 
   const openMap = () => {
-    window.open('/ROHINI MAP PDF.pdf', '_blank');
+    // We add /images/ because that is where the file is stored
+    window.open('/images/ROHINI MAP PDF.pdf', '_blank');
   };
 
   return (
@@ -22,7 +23,7 @@ const TopBar = () => {
       <style dangerouslySetInnerHTML={{ __html: blinkStyle }} />
       
       <h2 style={{cursor:'pointer', color:'#000', margin: 0}} onClick={()=>router.push('/')}>
-        JMD PROPERTIES
+        99acers Property
       </h2>
 
       <div style={styles.links}>
@@ -52,7 +53,7 @@ const TopBar = () => {
 
 const styles: { [key: string]: React.CSSProperties } = {
   nav: { 
-    height: '60px', 
+    height: '40px', 
     background: 'linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)', 
     display: 'flex', 
     alignItems: 'center', 

@@ -8,28 +8,21 @@ const AboutUs = () => {
 
   return (
     <div style={styles.pageWrapper}>
-      {/* --- NAVIGATION BUTTONS --- */}
-      <div style={styles.navBar}>
-        <button onClick={() => router.push('/')} style={styles.navBtn}>🏠 Home</button>
-        <button onClick={() => router.push('/tax-guide')} style={styles.navBtn}>📊 Tax Guide</button>
-        <button onClick={() => router.push('/emi-calculator')} style={styles.navBtn}>🧮 EMI Calc</button>
-        <button onClick={() => router.push('/about')} style={{...styles.navBtn, backgroundColor: '#0078db', color: '#fff'}}>ℹ️ About</button>
-        <button onClick={() => router.push('/login')} style={styles.adminBtn}>🔐 Admin</button>
-      </div>
+     
 
       <div style={styles.container}>
-        <h1 style={styles.mainTitle}>About JMD Real Estate</h1>
-        <p style={styles.subtitle}>Redefining the Property Experience in North Delhi</p>
+        <h1 style={styles.mainTitle}>About 99acers Property</h1>
+        <p style={styles.subtitle}>Redefining the Property Experience in India</p>
 
         <section style={styles.section}>
           <p style={styles.text}>
-            Welcome to <strong>JMD Real Estate</strong>, your premier destination for residential and commercial property solutions. 
+            Welcome to <strong>99acers Property</strong>, your premier destination for residential and commercial property solutions. 
             Established with a vision to bring transparency and professional integrity to the Delhi real estate market, 
             we specialize in helping families find their dream homes and investors secure high-yield assets in 
-            <strong> Rohini, Pitampura, and North Delhi.</strong>
+            <strong> India.</strong>
           </p>
           <p style={styles.text}>
-            At JMD, we understand that buying or selling a property is not just a financial transaction; 
+            At 99acers Property, we understand that buying or selling a property is not just a financial transaction; 
             it is a life-changing milestone. That is why we have built a platform that combines 
             <strong> local expertise</strong> with <strong>modern technology</strong> to make your property journey seamless.
           </p>
@@ -45,7 +38,7 @@ const AboutUs = () => {
         </div>
 
         <section style={styles.section}>
-          <h3 style={styles.sectionTitle}>Why Choose JMD Real Estate?</h3>
+          <h3 style={styles.sectionTitle}>Why Choose 99acers Property?</h3>
           <ul style={styles.list}>
             <li><strong>Verified Listings:</strong> Strict internal checks for accurate area and floor info.</li>
             <li><strong>Direct Communication:</strong> Secure OTP system to connect with genuine owners.</li>
@@ -57,7 +50,7 @@ const AboutUs = () => {
         <div style={styles.contactCard}>
           <h3 style={{...styles.sectionTitle, color: '#0078db'}}>Visit Our Office</h3>
           <p style={styles.contactText}>📍 <strong>Address:</strong> Sector-34, Rohini, Delhi - 110085</p>
-          <p style={styles.contactText}>📞 <strong>Phone:</strong> +91 99999 88888</p>
+          <p style={styles.contactText}>📞 <strong>Phone:</strong> +91 9891992544</p>
           <p style={styles.contactText}>✉️ <strong>Email:</strong> info@jmdrealestate.com</p>
         </div>
       </div>
@@ -66,7 +59,7 @@ const AboutUs = () => {
 };
 
 const styles: { [key: string]: React.CSSProperties } = {
-  pageWrapper: { backgroundColor: '#f9fbff', minHeight: '100vh', padding: '20px' },
+  pageWrapper: { backgroundColor: '#f9fbff', minHeight: '100vh', padding: '2px' },
   navBar: {
     maxWidth: '800px',
     margin: '0 auto 20px',

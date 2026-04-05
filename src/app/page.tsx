@@ -71,7 +71,7 @@ export default function Home() {
           />
         ))}
         <div style={styles.heroContent}>
-          <h1 style={styles.heroTitle}>JMD Properties Delhi NCR</h1>
+          <h1 style={styles.heroTitle}>99acers Property</h1>
           <p style={styles.heroSubtitle}>Premium Residences • Commercial Hubs • Verified Leads</p>
         </div>
       </div>
@@ -97,7 +97,7 @@ export default function Home() {
               <div style={styles.menuHeader}>ADMIN CONTROLS</div>
               {isAdmin ? (
                 <>
-                  <div onClick={() => router.push('/admin/logs')} style={styles.menuItem}>📋 Visitor Lead Logs</div>
+                  <div onClick={() => router.push('/dashboard')} style={styles.menuItem}>📋 Visitor Lead Logs</div>
                   <div onClick={() => router.push('/admin')} style={styles.menuItem}>⚙️ Manage Properties</div>
                   <div onClick={handleLogout} style={{...styles.menuItem, color: '#dc3545', fontWeight: 'bold'}}>
                     🚪 Logout Admin
@@ -113,7 +113,7 @@ export default function Home() {
         {/* RIGHT PANEL */}
         <div style={styles.rightContent}>
           <div style={styles.contentHeader}>
-            <h2 style={{margin: 0}}>Properties in Rohini & Delhi</h2>
+            <h2 style={{margin: 0}}>Properties For Sale</h2>
             <div style={styles.countBadge}>{properties.length} Listings Found</div>
           </div>
 
@@ -139,7 +139,7 @@ export default function Home() {
 
 const styles: { [key: string]: React.CSSProperties } = {
   pageWrapper: { backgroundColor: '#f0f2f5', minHeight: '100vh', fontFamily: 'Arial' },
-  hero: { position: 'relative', height: '400px', width: '100%', overflow: 'hidden', display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end', backgroundColor: '#000' },
+  hero: { position: 'relative', height: '350px', width: '100%', overflow: 'hidden', display: 'flex', alignItems: 'flex-end', justifyContent: 'flex-end', backgroundColor: '#000' },
   heroImg: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 1 },
   heroContent: { position: 'relative', textAlign: 'right', padding: '20px 40px', zIndex: 2 },
   heroTitle: { fontSize: '2.8rem', fontWeight: '800', margin: 0, color: 'white', textShadow: '2px 2px 10px rgba(0,0,0,1)' },

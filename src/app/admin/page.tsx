@@ -92,8 +92,8 @@ const AddPropertyForm = () => {
 
   return (
     <div style={styles.container as React.CSSProperties}>
-      <button onClick={() => router.push('/')} style={styles.backBtn as React.CSSProperties}>← Back</button>
-      <h2 style={{textAlign:'center', color:'#0078db'}}>Post Property (JMD Properties)</h2>
+      
+      <h2 style={{textAlign:'center', color:'#0078db'}}>Post Your Property</h2>
       
       <form onSubmit={handlePreSubmit} style={styles.form as React.CSSProperties}>
         <div style={styles.row as React.CSSProperties}>
@@ -198,7 +198,7 @@ const AddPropertyForm = () => {
 };
 
 const styles = {
-  container: { maxWidth: '650px', margin: '20px auto', padding: '25px', background: '#fff', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)', position: 'relative' },
+  container: { maxWidth: '650px', margin: '2px auto', padding: '25px', background: '#fff', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)', position: 'relative' },
   backBtn: { background: 'none', border: 'none', color: '#0078db', cursor: 'pointer', fontWeight: 'bold', marginBottom: '10px' },
   form: { display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '15px' },
   row: { display: 'flex', gap: '10px', alignItems: 'center' },
