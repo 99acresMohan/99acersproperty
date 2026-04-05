@@ -81,10 +81,10 @@ const AddPropertyForm = () => {
         } else {
           throw new Error();
         }
-      } catch (err) {
-        alert("Error posting property. Check your API route.");
-        setIsPosting(false);
-      }
+      } catch (err: any) {
+  alert("Post Failed: " + (err.message || "Check your internet or file size."));
+  setIsPosting(false);
+}
     } else {
       alert("Invalid OTP! Please enter 1234");
     }
