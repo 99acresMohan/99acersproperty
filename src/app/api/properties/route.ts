@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
 import { ObjectId } from 'mongodb';
 
-// Force dynamic ensures Railway doesn't try to "cache" your Rohini listings
-export const dynamic = 'force-dynamic';
+// Cache responses for 60 seconds to reduce repeated Atlas round-trips
+export const revalidate = 60;
 
 // --- 1. GET ALL PROPERTIES ---
 export async function GET() {
