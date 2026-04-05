@@ -6,11 +6,14 @@ if (!process.env.MONGODB_URI) {
 
 const uri = process.env.MONGODB_URI;
 const options = {
-  maxPoolSize: 10,
-  minPoolSize: 2,
-  serverSelectionTimeoutMS: 5000,
-  socketTimeoutMS: 45000,
-  connectTimeoutMS: 10000,
+  maxPoolSize: 20,
+  minPoolSize: 5,
+  serverSelectionTimeoutMS: 3000,
+  socketTimeoutMS: 30000,
+  connectTimeoutMS: 5000,
+  maxIdleTimeMS: 60000,
+  retryWrites: true,
+  retryReads: true,
 };
 
 let client;
