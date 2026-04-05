@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
 import { ObjectId } from 'mongodb';
 
-export const runtime = 'edge'; // Add this to the top of your API files
+export const runtime = 'nodejs';
 // Cache responses for 60 seconds to reduce repeated Atlas round-trips
 export const revalidate = 60;
 
